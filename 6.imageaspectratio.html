@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Simple Layout">
+        <meta name="viewport" content="width=device-width,initial-sclae=1.0">
+        <title>Simple Layout</title>
+        
+        <style>
+            
+            /*,*:before,*:after{
+                box-sizing: border-box;
+            }*/
+            
+            body{
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                background: #363942;
+            }
+            
+            .zoom{
+                width: 200px; 
+                aspect-ratio:1/1;
+                margin: 10px;
+                object-fit: cover;
+            }
+            .zoom1{
+                width: 300px; 
+                aspect-ratio:2/1;
+                margin: 10px;
+                object-fit: cover;
+                mix-blend-mode: color-burn;
+            }
+                  
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div>
+            <img src="img_5terre.jpg" class="zoom">
+            <img src="parttime.jpg" class="zoom">
+            <img src="school.jpg" class="zoom">
+        </div>
+        
+        <div>
+            <img src="img_5terre.jpg" class="zoom1">
+            <img src="parttime.jpg" class="zoom1">
+            <img src="school.jpg" class="zoom1">
+        </div>
+    
+    </body>
+
+
+</html>
